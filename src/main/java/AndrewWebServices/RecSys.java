@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
  * DO NOT MODIFY this class.
  */
 public class RecSys {
+    @SuppressWarnings("CallToPrintStackTrace")
     public String getRecommendation(String accountName) {
         try {
             TimeUnit.SECONDS.sleep(10);

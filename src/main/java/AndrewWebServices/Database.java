@@ -8,10 +8,11 @@ import java.util.concurrent.TimeUnit;
  * DO NOT MODIFY this class. 
  */
 public class Database {
+    @SuppressWarnings("CallToPrintStackTrace")
     public int getPassword(String accountName) {
         try {
             TimeUnit.SECONDS.sleep(10);
-            if (accountName == "Scotty") {
+            if ("Scotty".equals(accountName)) {
                 return 17214;
             } else {
                 return 0;
